@@ -46,16 +46,16 @@ Every widget consists of **exactly four parts**, each with a single responsibili
 
 ```mermaid
 flowchart TB
-    Outside["Outside World\n(Signals, Remotes, Other Widgets)"]
-    Connector["Connector\n• Listens to signals\n• Emits signals\n• Catches remote commands"]
-    Controller["Controller\n• Bridges View ↔ Model\n• Manages lifecycle\n• Transforms data"]
-    View["View\n• Pure rendering\n• No logic"]
-    Model["Model\n• Holds state\n• Business logic\n• Exposes stream"]
+    Outside["Outside World (Signals, Remotes, Other Widgets)"]
+    Connector["Connector• Listens to signals• Emits signals• Catches remote commands"]
+    Controller["Controller• Bridges View ↔ Model• Manages lifecycle• Transforms data"]
+    View["View• Pure rendering• No logic"]
+    Model["Model• Holds state• Business logic• Exposes stream"]
 
     Outside <-->|"signals & remotes"| Connector
     Connector -->|"translates external events"| Controller
     Controller -->|"provides data & callbacks"| View
-    Controller <-->|"subscribes to stream,<br>forwards actions"| Model
+    Controller <-->|"subscribes to stream, forwards actions"| Model
 ```
 
 Each widget lives in its own folder with four files:
