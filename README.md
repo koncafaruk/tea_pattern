@@ -1,8 +1,8 @@
-# TEA Architecture — GitHub README
+# TEA Architecture
 
 ## Overview
 
-**TEA** (The Elm Architecture inspired) is a unidirectional, modular, and scalable Flutter architecture designed to be **predictable** and **AI agent-friendly**. Communication topology is explicit and declared, not implicit.
+**TEA** is a unidirectional, modular, and scalable Flutter architecture designed to be **predictable** and **AI agent-friendly**. Communication topology is explicit and declared, not implicit.
 
 > Verbosity in boilerplate is acceptable because AI writes it — what matters is clarity of structure for both AI agents and human reviewers.
 > 
